@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Stupeflix API'
+project = u'Stupeflix SXML'
 copyright = u'2012, Stupeflix'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'StupeflixAPIdoc'
+htmlhelp_basename = 'StupeflixSXMLdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -182,10 +182,7 @@ latex_elements = {
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-  ('index', 'StupeflixAPI.tex', u'Stupeflix API Documentation',
-   u'Stupeflix', 'manual'),
-]
+latex_documents = []
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -212,10 +209,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'stupeflixapi', u'Stupeflix API Documentation',
-     [u'Stupeflix'], 1)
-]
+man_pages = []
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
@@ -226,11 +220,7 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-  ('index', 'StupeflixAPI', u'Stupeflix API Documentation',
-   u'Stupeflix', 'StupeflixAPI', 'One line description of project.',
-   'Miscellaneous'),
-]
+texinfo_documents = []
 
 # Documents to append as an appendix to all manuals.
 #texinfo_appendices = []
