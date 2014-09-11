@@ -163,7 +163,15 @@ So an image examples are:
   <image color="#ff0000"/>
   <image color="#ffffff88"/>
 
-You can too query some Maps to get directly a `map image <http://wiki.stupeflix.com/doku.php?id=gmapsimage>`_.
+You can too query some Maps to get directly a map image from our Provider Mapbox.
+
+The arguments are center (latitude and longitude) to position the map, zoom (0 means no zoom, you get the whole planisphere), pixel size and an optional marker (latitude and longitude).
+
+An example movie xml is:
+
+.. code-block:: xml
+
+     <image type="map" center="51.526389,-0.160833" zoom="13" markers="51.526389,-0.160833" size="640x640"/>
 
 Supported formats for images are non interlaced pngs, jpeg and non animated gifs.
 
