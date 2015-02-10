@@ -6,7 +6,7 @@ Resources
 XML Editor
 ----------
 
-The Stupeflix XML Editor is an online tool that allow you to write your video XML and test it immediatly: `xeditor.stupeflix.com <http://xeditor.stupeflix.com>`_.
+The Stupeflix XML Editor is an online tool that allow you to write your video XML and test it immediatly: `developer.stupeflix.com <https://developer.stupeflix.com/library/me/>`_.
 
 
 .. _supported_codecs:
