@@ -1,8 +1,10 @@
 .. _stupeflix_xml_effects:
 
+===================
 Effects parameters
 ===================
 
+-----------------
 Common parameters
 -----------------
 
@@ -11,32 +13,43 @@ Name        Default values  Possible values
 =========== =============== ==============================================================
 duration    5.0             float
 =========== =============== ==============================================================
-timeOffset   0.0             float
+timeOffset   0.0            float
 =========== =============== ==============================================================
 
-## Diving
+---------
+ Diving
+---------
 
-###  Type: "diving"
+  Type: "diving"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 ** No specific parameter. **
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 The number of authorized children is in [1, 100].
 
-### Example:
+ Example:
+------------------------------------------------------------
   <effect type="diving" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
     <image filename="http://assets.stupeflix.com/code/images/Canyon_de_Chelly_Navajo.jpg"/>
     <image filename="http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/>
   </effect>
-## Explode
 
-###  Type: "explode"
+----------
+Explode
+----------
 
-###  Parameters:
+  Type: "explode"
+------------------------------------------------------------
+
+  Parameters:
+------------------------------------------------------------
 
 =========== =============== ==============================================================
 Name        Default values  Possible values
@@ -44,21 +57,27 @@ Name        Default values  Possible values
 adapter     kenburnsAdapter none,panoramicAdapter,zoomAdapter,fixedAdapter,kenburnsAdapter
 =========== =============== ==============================================================
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="explode" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
 
-## Flower
+--------
+Flower
+--------
 
-###  Type: "flower"
+  Type: "flower"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 
 =========== =============== ==============================================================
@@ -67,22 +86,28 @@ Name        Default values  Possible values
 adapter     kenburnsAdapter none,panoramicAdapter,zoomAdapter,fixedAdapter,kenburnsAdapter
 =========== =============== ==============================================================
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="flower" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
 
-## Kenburns
+---------
+Kenburns
+---------
 
-###  Type: "kenburns"
+  Type: "kenburns"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 
 =========== =============== ==============================================================
@@ -95,21 +120,27 @@ direction   positive        positive,negative
 adapter     kenburnsAdapter none,panoramicAdapter,zoomAdapter,fixedAdapter,kenburnsAdapter
 =========== =============== ==============================================================
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="kenburns" depthEnable="true" direction="positive" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
 
-## None
+------
+None
+-----
 
-###  Type: "none"
+  Type: "none"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 
 =========== =============== ==============================================================
@@ -119,21 +150,27 @@ depthEnable true            true,false
 =========== =============== ==============================================================
 
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="none" depthEnable="true" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
 
-## Panel
+------
+Panel
+------
 
-###  Type: "panel"
+  Type: "panel"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 
 ========== =============== ==============================================================
@@ -142,21 +179,27 @@ Name       Default values  Possible values
 adapter    kenburnsAdapter none,panoramicAdapter,zoomAdapter,fixedAdapter,kenburnsAdapter
 ========== =============== ==============================================================
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="panel" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
 
-## Rectangles
+----------------
+Rectangles
+----------------
 
-###  Type: "rectangles"
+  Type: "rectangles"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 
 ========== =============== ==============================================================
@@ -166,29 +209,37 @@ filterType grow            grow
 ========== =============== ==============================================================
 
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="rectangles" filterType="grow" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
 
-## Rotator
+-----------
+Rotator
+-----------
 
-###  Type: "rotator"
+  Type: "rotator"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 ** No specific parameter. **
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 The number of authorized children is in [1, 100].
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="rotator" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
@@ -196,11 +247,15 @@ The number of authorized children is in [1, 100].
     <image filename="http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/>
   </effect>
 
-## Slice
+---------
+Slice
+---------
 
-###  Type: "slice"
+  Type: "slice"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 ======= =============== ==============================================================
 Name    Default values  Possible values
@@ -209,29 +264,37 @@ adapter kenburnsAdapter none,panoramicAdapter,zoomAdapter,fixedAdapter,kenburnsA
 ======= =============== ==============================================================
 
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 There must be exactly one child node.
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="slice" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/>
   </effect>
 
-## Sliding
+----------
+Sliding
+----------
 
-###  Type: "sliding"
+  Type: "sliding"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 ** No specific parameter. **
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 The number of authorized children is in [1, 100].
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="sliding" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
@@ -239,19 +302,25 @@ The number of authorized children is in [1, 100].
     <image filename="http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/>
   </effect>
 
-## Square
+----------
+Square
+----------
 
-###  Type: "square"
+  Type: "square"
+------------------------------------------------------------
 
-###  Parameters:
+  Parameters:
+------------------------------------------------------------
 
 ** No specific parameter. **
 
-###  Children:
+  Children:
+------------------------------------------------------------
 
 The number of authorized children is in [1, 100].
 
-### Example:
+ Example:
+------------------------------------------------------------
 
   <effect type="square" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
