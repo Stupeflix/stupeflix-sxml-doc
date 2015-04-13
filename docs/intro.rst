@@ -11,7 +11,7 @@ It is intended to be as simple as possible to create videos, yet powerful enough
 * it is 4D
 * it is vector-based
 
-The language uses the `Craftsman 1.0 API schema <http://code.stupeflix.com/schema.xsd>`_.
+The language uses the `Craftsman 1.0 API schema <https://raw.githubusercontent.com/Stupeflix/stupeflix-sxml-doc/master/docs/schema.xsd>`_.
 
 XML, and fully human readable
 -----------------------------
@@ -66,7 +66,7 @@ Let's start with an example of a very simple but yet valid movie definition.
         <text type="legend">Welcome to the desert.</text>
       </stack>
       <effect type="flower" duration="5.0">
-        <image filename = "http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/> 
+        <image filename = "http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/>
       </effect>
     </body>
   </movie>
