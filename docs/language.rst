@@ -194,4 +194,4 @@ Example:
 Filters
 -------
 
-You will find a complete descriptions of parameters for each kind of filter in `the developers' library <https://developer.stupeflix.com/library/?q=tags:%22filter%22%20is_featured%3ATrue>`_.
+You will find a complete descriptions of parameters for each kind of filter in _the developers library: https://developer.stupeflix.com/library/?q=tags:%22filter%22%20is_featured%3ATrue.
