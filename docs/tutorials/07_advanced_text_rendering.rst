@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-  <link rel="stylesheet" href="http://static.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
+  <link rel="stylesheet" href="//cdn.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
 
 Advanced Text Rendering
 =======================
@@ -223,7 +223,7 @@ Example
 
   <stack>
     <text type="advanced" fontsize="20" duration="1" reference="  AAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAA" weight="bold" style="italic" stretch="condensed" face="times" >In text display, line wrap is the feature of continuing on a new line when a line is full, </text>
-    <animator type="custom">  
+    <animator type="custom">
       <key time="0.0" pos="-1.6,0,0"/>
     </animator>
   </stack>
@@ -233,7 +233,7 @@ Example
   <div class="ready sxmovie" style="width:640px; height:360px;"><!--
       <stack>
         <text type="advanced" fontsize="20" duration="1" reference="  AAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAA" weight="bold" style="italic" stretch="condensed" face="times" >In text display, line wrap is the feature of continuing on a new line when a line is full, </text>
-        <animator type="custom">  
+        <animator type="custom">
           <key time="0.0" pos="-1.6,0,0"/>
         </animator>
       </stack>
@@ -241,4 +241,4 @@ Example
 
 .. raw:: html
 
-  <script type="text/javascript" charset="utf-8" src="http://static.stupeflix.com/play/1.2/play-min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="//cdn.stupeflix.com/play/1.2/play-min.js"></script>

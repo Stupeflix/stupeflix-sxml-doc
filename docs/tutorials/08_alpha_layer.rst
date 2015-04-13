@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-  <link rel="stylesheet" href="http://static.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
+  <link rel="stylesheet" href="//cdn.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
 
 Alpha Layer
 ===========
@@ -127,4 +127,4 @@ Finally, the limit is your imagination, you can use a video with alpha wherever 
 
 .. raw:: html
 
-  <script type="text/javascript" charset="utf-8" src="http://static.stupeflix.com/play/1.2/play-min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="//cdn.stupeflix.com/play/1.2/play-min.js"></script>

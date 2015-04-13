@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-  <link rel="stylesheet" href="http://static.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
+  <link rel="stylesheet" href="//cdn.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
 
 Animators
 =========
@@ -713,4 +713,4 @@ Finally, you can mix custom and builtin animators, they have exactly the same ro
 
 .. raw:: html
 
-  <script type="text/javascript" charset="utf-8" src="http://static.stupeflix.com/play/1.2/play-min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="//cdn.stupeflix.com/play/1.2/play-min.js"></script>
