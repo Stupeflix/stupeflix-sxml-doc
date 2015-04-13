@@ -1,8 +1,5 @@
 .. _masking:
 
-.. raw:: html
-
-  <link rel="stylesheet" href="//cdn.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
 
 Masking
 =======
@@ -27,9 +24,8 @@ Then the mask `wbmask.mp4 <http://assets.stupeflix.com/code/tutorials/masking/wb
 
 We combine it using a filter with type "mask". White will be opaque, whereas black will be fully transparent:
 
-.. raw:: html
+.. code-block:: xml
 
-  <div class="ready sxmovie" style="width:640px; height:360px;"><!--
       <overlay duration="10.0" top="0.1">
         <video filename="http://assets.stupeflix.com/code/tutorials/masking/sts120_launch.mov">
           <filter type="mask" opaqueColor="#ffffff" transparentColor="#000000">
@@ -37,13 +33,12 @@ We combine it using a filter with type "mask". White will be opaque, whereas bla
           </filter>
         </video>
       </overlay>
-  --></div>
+
 
 In fact we used SXML too to build the mask :
 
-.. raw:: html
+.. code-block:: xml
 
-  <div class="ready sxmovie" style="width:640px; height:360px;"><!--
       <stack duration="10">
         <overlay right="0.15" width="0.45" top="0.15" height="0.45">
            <image color="#ffffff"/>
@@ -70,13 +65,12 @@ In fact we used SXML too to build the mask :
           <animator type="grow" growEnd="0.7"/>
         </overlay>
       </stack>
-  --></div>
+
 
 And finally, if we want to, we can combine the xmls into a single one, as we can nest filters and rendering nodes (stack, sequence, overlay, effect etc).
 
-.. raw:: html
+.. code-block:: xml
 
-  <div class="ready sxmovie" style="width:640px; height:360px;"><!--
       <overlay duration="10.0" top="0.1">
         <video filename="http://assets.stupeflix.com/code/tutorials/masking/sts120_launch.mov">
           <filter type="mask" opaqueColor="#ffffff" transparentColor="#000000">
@@ -109,7 +103,7 @@ And finally, if we want to, we can combine the xmls into a single one, as we can
           </filter>
         </video>
       </overlay>
-  --></div>
+
 
 Scene Post-Processing
 ---------------------
@@ -120,9 +114,8 @@ But you can apply it too as a postprocessing. In that case it will be full scree
 
 You can see the result at `fullscreen_mask_video.mp4 <http://assets.stupeflix.com/code/tutorials/masking/fullscreen_mask_video.mp4>`_.
 
-.. raw:: html
+.. code-block:: xml
 
-  <div class="ready sxmovie" style="width:640px; height:360px;"><!--
       <stack duration="10.0">
         <filter type="mask" opaqueColor="#ffffff" transparentColor="#000000">
           <video filename="http://assets.stupeflix.com/code/tutorials/masking/wbmask.mp4"/>
@@ -135,10 +128,5 @@ You can see the result at `fullscreen_mask_video.mp4 <http://assets.stupeflix.co
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Double-O-Arch_Arches_National_Park_2.jpg"/>
         </effect>
       </stack>
-  --></div>
 
 As previously, you can insert inline a rendering node instead of the wbmask video, for example a stack containing several overlays.
-
-.. raw:: html
-
-  <script type="text/javascript" charset="utf-8" src="//cdn.stupeflix.com/play/1.2/play-min.js"></script>

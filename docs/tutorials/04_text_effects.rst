@@ -1,8 +1,5 @@
 .. _text_effects:
 
-.. raw:: html
-
-  <link rel="stylesheet" href="//cdn.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
 
 Text effects
 ============
@@ -110,7 +107,7 @@ Arguments are:
 
 .. code-block:: xml
 
-  <filter type="distancecolor" distanceWidth="40.0" color="#cccccc" strokeWidth="0.04" strokeOpacity="1.0" strokeColor="#0000FF" /> 
+  <filter type="distancecolor" distanceWidth="40.0" color="#cccccc" strokeWidth="0.04" strokeOpacity="1.0" strokeColor="#0000FF" />
 
 Sample video:
 
@@ -167,12 +164,12 @@ Now, you can combine those effects to create a composite one.
     <body>
       <stack duration="20">
         <overlay height="1.0" width="1.0">
-          <image color="#ffffff" /> 
+          <image color="#ffffff" />
         </overlay>
         <text type="zone" vector="true">
           Hello World
           <filter type="distancemap" distanceWidth="40.0"/>
-          <filter type="distancecolor" distanceWidth="40.0" color="#eda35f" 
+          <filter type="distancecolor" distanceWidth="40.0" color="#eda35f"
                   strokeColor="#000000" strokeOpacity="1.0" strokeWidth="0.02"
                   innerShadowColor="#de7316" innerShadowOpacity="1.0" innerShadowPosition="0.01,-0.01"
                   dropShadowColor="#00000044" dropShadowOpacity="1.0" dropShadowBlurWidth="0.9" dropShadowPosition="0.05,-0.05"
@@ -197,12 +194,12 @@ Another sample, with a scale animation to show good antialiasing properties:
     <body>
       <stack duration="20">
         <overlay height="1.0" width="1.0">
-          <image color="#ffffff" /> 
+          <image color="#ffffff" />
         </overlay>
         <text type="zone" vector="true">
           Hello World
           <filter type="distancemap" distanceWidth="40.0"/>
-          <filter type="distancecolor" distanceWidth="40.0" color="#eda35f" 
+          <filter type="distancecolor" distanceWidth="40.0" color="#eda35f"
                   strokeColor="#000000" strokeOpacity="1.0" strokeWidth="0.02"
                   innerShadowColor="#de7316" innerShadowOpacity="1.0" innerShadowPosition="0.01,-0.01"
                   dropShadowColor="#00000044" dropShadowOpacity="1.0" dropShadowBlurWidth="0.9" dropShadowPosition="0.05,-0.05"
@@ -236,12 +233,12 @@ Here, we take the last example, but we are starting from no stroke to slight str
     <body>
       <stack duration="10">
         <overlay height="1.0" width="1.0">
-          <image color="#ffffff" /> 
+          <image color="#ffffff" />
         </overlay>
         <text type="zone" vector="true">
           Hello World
           <filter type="distancemap" distanceWidth="40.0"/>
-          <filter type="distancecolor" distanceWidth="40.0" color="#eda35f" 
+          <filter type="distancecolor" distanceWidth="40.0" color="#eda35f"
                   strokeColor="#000000" strokeOpacity="1.0"
                   innerShadowColor="#de7316" innerShadowOpacity="1.0" innerShadowPosition="0.01,-0.01"
                   dropShadowColor="#00000044" dropShadowOpacity="1.0" dropShadowBlurWidth="0.9"
@@ -263,7 +260,3 @@ Sample video:
   <video controls="" src="https://stupeflix-assets.s3.amazonaws.com/code/tutorials/texteffects/composite_parameter_animate.mp4"></video>
 
 The good news is that rendering is just as fast as when nothing is animated. No less, no more. Thanks for your attention, and feel free to send us feedback about your experience on this feature!
-
-.. raw:: html
-
-  <script type="text/javascript" charset="utf-8" src="//cdn.stupeflix.com/play/1.2/play-min.js"></script>

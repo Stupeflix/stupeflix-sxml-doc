@@ -1,8 +1,5 @@
 .. _audio:
 
-.. raw:: html
-
-  <link rel="stylesheet" href="//cdn.stupeflix.com/play/1.2/style-min.css" type="text/css" charset="utf-8"/>
 
 Audio, Voice Over & Text-To-Speech
 ==================================
@@ -54,7 +51,7 @@ So the correct way to do so is to add a stack to your xml and place your effect 
         <effect type="diving">
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Double-O-Arch_Arches_National_Park_2.jpg"/>
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Hopetoun_falls.jpg"/>
-        </effect>        
+        </effect>
         <audio filename="http://assets.stupeflix.com/code/tutorials/audio/soundtracks/Flypaper.mp3"/>
       </stack>
     </body>
@@ -82,7 +79,7 @@ So how can you add several audio at the same time, and how do you force them to 
         <effect type="diving" duration="10">
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Double-O-Arch_Arches_National_Park_2.jpg"/>
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Hopetoun_falls.jpg"/>
-        </effect>        
+        </effect>
         <audio filename="http://assets.stupeflix.com/code/tutorials/audio/soundtracks/Flypaper.mp3" duration=".." fadein="2"/>
       </stack>
       <transition type="swirl" duration="2.0"/>
@@ -120,7 +117,7 @@ So, adding a soundtrack is easy. But what about adding a voiceover when you do n
         <effect type="diving">
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Double-O-Arch_Arches_National_Park_2.jpg"/>
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Hopetoun_falls.jpg"/>
-        </effect>        
+        </effect>
         <audio filename="http://assets.stupeflix.com/code/tutorials/audio/soundtracks/Flypaper.mp3" duration=".." fadein="2" fadeout="2" volume="0.1" skip="5"/>
         <audio voice="neospeech:julie" margin-end="2.0">Music by Josh Woodward, Flypaper, from the album The Simple Life. Available on Jamendo dot com. Images from Wikipedia Picture of the Day.</audio>
       </stack>
@@ -144,7 +141,7 @@ You can easily concatenate different audio tracks. Just create as sequence of au
         <effect type="diving" duration="10">
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Double-O-Arch_Arches_National_Park_2.jpg"/>
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Hopetoun_falls.jpg"/>
-        </effect>        
+        </effect>
         <sequence>
            <audio voice="neospeech:julie">Hello.</audio>
            <audio voice="neospeech:paul">Who are you?</audio>
@@ -205,7 +202,7 @@ Finally, let's add an audio track from a video:
         <effect type="diving" duration="10">
           <image filename="http://assets.stupeflix.com/code/homevideo/images/wiki_Double-O-Arch_Arches_National_Park_2.jpg"/>
           <video filename="http://assets.stupeflix.com/code/tutorials/audio/video/sts120_launch.mov" audio="false"/>
-        </effect>        
+        </effect>
       </stack>
     </body>
   </movie>
@@ -228,8 +225,8 @@ How can you use it ? Just use the "duck-others" parameter.
       <stack duration="80">
         <effect duration="80" depthEnable="false" type="none">
           <image color="#FF0000"/>
-        </effect>     
-        <audio filename="http://assets.stupeflix.com/code/audio/music.mp3" />        
+        </effect>
+        <audio filename="http://assets.stupeflix.com/code/audio/music.mp3" />
         <audio filename="http://assets.stupeflix.com/code/audio/voice.mp3" duck-others="0.2"/>
       </stack>
     </body>
@@ -243,7 +240,7 @@ The duck-others tell what is the volume of all "others" tracks when some sound i
 
 So, when some sound is detected in "voice.mp3", the "music.mp3" volume is lowered to 0.2 (20 %). Otherwise, it stays the same.
 
-To get a better result, a fade-in / fade-out and a margin are added to this basic effect : duck-margin and duck-fade are duration, with respective 
+To get a better result, a fade-in / fade-out and a margin are added to this basic effect : duck-margin and duck-fade are duration, with respective
 default values of 0.5s and 1.0s .
 
 In this case, the margin tells that the volume will be lowered to 20% 0.5s after and before the detected sound.
@@ -258,8 +255,8 @@ If you want to increase the effect, you can override those default values:
       <stack duration="80">
         <effect duration="80" depthEnable="false" type="none">
           <image color="#FF0000"/>
-        </effect>     
-        <audio filename="http://assets.stupeflix.com/code/audio/music.mp3" />        
+        </effect>
+        <audio filename="http://assets.stupeflix.com/code/audio/music.mp3" />
         <audio filename="http://assets.stupeflix.com/code/audio/voice.mp3" duck-fade="2.0" duck-margin="2.0" duck-others="0.2" />
       </stack>
     </body>
@@ -276,7 +273,3 @@ Wrapping up
 That was actually a good recapitulation of what we saw earlier today.
 
 You said easy? I heard you!
-
-.. raw:: html
-
-  <script type="text/javascript" charset="utf-8" src="//cdn.stupeflix.com/play/1.2/play-min.js"></script>
