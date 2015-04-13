@@ -143,7 +143,6 @@ In that case, the stack tag is assigned the only specified duration, 15.0 second
 
 For a total of 15.0 seconds.
 
-More information on how durations are affected in `Computing Durations <http://wiki.stupeflix.com/doku.php?id=computingdurations>`_.
 
 Images
 ------
