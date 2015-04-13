@@ -16,3 +16,12 @@ Supported Ffmpeg codecs
 
 .. raw:: html
    :file: ffmpegcodecs.txt
+
+
+Stupeflix XML schema XSD
+
+   - download : :doc:`schema.xsd`
+   
+.. code-block:: xml
+
+   :file: schema.xsd
