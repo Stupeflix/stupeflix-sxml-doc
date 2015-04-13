@@ -12,7 +12,6 @@ Common parameters
 Name        Default values  Possible values
 =========== =============== ===============
 duration    5.0             float
-=========== =============== ===============
 timeOffset  0.0             float
 =========== =============== ===============
 
@@ -121,9 +120,7 @@ Parameters:
 Name        Default values  Possible values
 =========== =============== ==============================================================
 depthEnable true            true,false
-=========== =============== ==============================================================
 direction   positive        positive,negative
-=========== =============== ==============================================================
 adapter     kenburnsAdapter none,panoramicAdapter,zoomAdapter,fixedAdapter,kenburnsAdapter
 =========== =============== ==============================================================
 
@@ -340,7 +337,7 @@ Children:
 
 The number of authorized children is in [1, 100].
 
- Example:
+Example:
 ----------
 
 .. code-block:: xml
