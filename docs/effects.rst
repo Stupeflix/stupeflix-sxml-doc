@@ -1,7 +1,10 @@
-# Effect parameters
+.. _stupeflix_xml_effects:
 
-##  Common Parameters:
+Effects parameters
+===================
 
+Common parameters
+-----------------
 
 =========== =============== ==============================================================
 Name        Default values  Possible values
