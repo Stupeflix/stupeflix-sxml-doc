@@ -54,7 +54,7 @@ Available operators are:
 Effects
 -------
 
-You will find a complete descriptions of parameters for each kind of effects in http://wiki.stupeflix.com/doku.php?id=effects.
+You will find a complete descriptions of parameters for each kind of effects in :doc:`effects`.
 
 A typical effect tag looks like:
 
@@ -71,7 +71,7 @@ Transitions
 
 A transition tag can only be inserted in a sequence tag (or in the body tag). It uses the previous and the next video sequences provided, overlap them (reducing the sequence total duration), and so generate a new video stream. Previous and next video sequences can be any video stream: effect or stack of complex effects.
 
-You will find a complete descriptions of parameters for each kind of transition in http://wiki.stupeflix.com/doku.php?id=transitions.
+You will find complete documentation and demonstration for each kind of transition in the developers' library: https://developer.stupeflix.com/library/?q=tags%3A%22transition%22%20is_featured%3ATrue.
 
 A typical transition tag looks like :
 
@@ -95,7 +95,7 @@ The text to be displayed is then contained in the text tag:
 
   <text type="legend">Here is the text to be displayed</text>
 
-Here is `the list of available text effects <http://wiki.stupeflix.com/doku.php?id=texteffects>`_ and the `list of available fonts <http://wiki.stupeflix.com/doku.php?id=fonts>`_.
+Here is `the list of available text effects <http://wiki.stupeflix.com/doku.php?id=texteffects>`_ and the `list of available fonts <https://developer.stupeflix.com/library/?q=fonts%20is_featured%3ATrue>`_.
 
 Audio
 -----
@@ -195,4 +195,4 @@ Example:
 Filters
 -------
 
-You will find a complete descriptions of parameters for each kind of filter in `Filters <http://wiki.stupeflix.com/doku.php?id=filters>`_.
+You will find a complete descriptions of parameters for each kind of filter in `the developers' library <https://developer.stupeflix.com/library/?q=tags:%22filter%22>`_.
