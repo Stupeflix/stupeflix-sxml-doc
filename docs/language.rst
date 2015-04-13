@@ -95,7 +95,7 @@ The text to be displayed is then contained in the text tag:
 
   <text type="legend">Here is the text to be displayed</text>
 
-Here is the list of available text effects : :doc:`tutorial/04_text_effects`. And here are demos of available the fonts : https://developer.stupeflix.com/library/?q=fonts%20is_featured%3ATrue
+Here is the list of available text effects : :doc:`tutorial/04_text_effects`. And here is the `list of available fonts <https://developer.stupeflix.com/library/?q=fonts%20is_featured%3ATrue>`_.
 
 Audio
 -----
@@ -162,7 +162,7 @@ So an image examples are:
   <image color="#ff0000"/>
   <image color="#ffffff88"/>
 
-You can too query some Maps to get directly a map image from our Provider Mapbox.
+You can too query some Maps to get directly a map image from our provider Mapbox.
 
 The arguments are center (latitude and longitude) to position the map, zoom (0 means no zoom, you get the whole planisphere), pixel size and an optional marker (latitude and longitude).
 
@@ -194,4 +194,4 @@ Example:
 Filters
 -------
 
-You will find more descriptions and demos for each kind of filter in the developers' library: https://developer.stupeflix.com/library/?q=tags:%22filter%22%20is_featured%3ATrue.
+You will find a complete descriptions of parameters for each kind of filter in `the developers' library <https://developer.stupeflix.com/library/?q=tags:%22filter%22%20is_featured%3ATrue>`_.
