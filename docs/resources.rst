@@ -20,8 +20,4 @@ Supported Ffmpeg codecs
 
 Stupeflix XML schema XSD
 
-   - download : :doc:`schema.xsd`
-
-
-.. raw:: html
-   :file: schema.xsd
+   - download : https://raw.githubusercontent.com/Stupeflix/stupeflix-sxml-doc/master/docs/schema.xsd
