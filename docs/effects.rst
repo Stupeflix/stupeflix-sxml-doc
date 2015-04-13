@@ -8,13 +8,13 @@ Effects parameters
 Common parameters
 -----------------
 
-=========== =============== ==============================================================
+=========== =============== ===============
 Name        Default values  Possible values
-=========== =============== ==============================================================
+=========== =============== ===============
 duration    5.0             float
-=========== =============== ==============================================================
+=========== =============== ===============
 timeOffset  0.0             float
-=========== =============== ==============================================================
+=========== =============== ===============
 
 ---------
  Diving
@@ -35,6 +35,9 @@ The number of authorized children is in [1, 100].
 
  Example:
 ----------
+
+.. code-block:: xml
+
   <effect type="diving" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
     <image filename="http://assets.stupeflix.com/code/images/Canyon_de_Chelly_Navajo.jpg"/>
@@ -65,6 +68,8 @@ There must be exactly one child node.
 Example:
 ----------
 
+.. code-block:: xml
+
   <effect type="explode" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
@@ -94,6 +99,8 @@ There must be exactly one child node.
 
 Example:
 ----------
+
+.. code-block:: xml
 
   <effect type="flower" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
@@ -128,6 +135,8 @@ There must be exactly one child node.
 Example:
 ----------
 
+.. code-block:: xml
+
   <effect type="kenburns" depthEnable="true" direction="positive" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
@@ -158,6 +167,8 @@ There must be exactly one child node.
 Example:
 ----------
 
+.. code-block:: xml
+
   <effect type="none" depthEnable="true" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
@@ -186,6 +197,8 @@ There must be exactly one child node.
 
 Example:
 ----------
+
+.. code-block:: xml
 
   <effect type="panel" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
@@ -217,6 +230,8 @@ There must be exactly one child node.
  Example:
 ----------
 
+.. code-block:: xml
+
   <effect type="rectangles" filterType="grow" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
   </effect>
@@ -240,6 +255,8 @@ The number of authorized children is in [1, 100].
 
 Example:
 ----------
+
+.. code-block:: xml
 
   <effect type="rotator" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
@@ -272,6 +289,8 @@ There must be exactly one child node.
 Example:
 ----------
 
+.. code-block:: xml
+
   <effect type="slice" adapter="kenburnsAdapter" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Monument_Valley.jpg"/>
   </effect>
@@ -295,6 +314,8 @@ The number of authorized children is in [1, 100].
 
 Example:
 ----------
+
+.. code-block:: xml
 
   <effect type="sliding" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
@@ -321,6 +342,8 @@ The number of authorized children is in [1, 100].
 
  Example:
 ----------
+
+.. code-block:: xml
 
   <effect type="square" duration="5.0" timeOffset="0.0" >
     <image filename="http://assets.stupeflix.com/code/images/Ha_long_bay.jpg"/>
