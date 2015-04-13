@@ -95,7 +95,7 @@ The text to be displayed is then contained in the text tag:
 
   <text type="legend">Here is the text to be displayed</text>
 
-Here is `the list of available text effects <http://wiki.stupeflix.com/doku.php?id=texteffects>`_ and the `list of available fonts <https://developer.stupeflix.com/library/?q=fonts%20is_featured%3ATrue>`_.
+Here is the list of available text effects : :doc:`tutorial/04_text_effects`. And here is the `list of available fonts <https://developer.stupeflix.com/library/?q=fonts%20is_featured%3ATrue>`_.
 
 Audio
 -----
@@ -195,4 +195,4 @@ Example:
 Filters
 -------
 
-You will find a complete descriptions of parameters for each kind of filter in `the developers' library <https://developer.stupeflix.com/library/?q=tags:%22filter%22>`_.
+You will find a complete descriptions of parameters for each kind of filter in `the developers' library <https://developer.stupeflix.com/library/?q=tags:%22filter%22%20is_featured%3ATrue>`_.
