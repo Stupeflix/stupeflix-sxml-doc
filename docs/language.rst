@@ -71,7 +71,7 @@ Transitions
 
 A transition tag can only be inserted in a sequence tag (or in the body tag). It uses the previous and the next video sequences provided, overlap them (reducing the sequence total duration), and so generate a new video stream. Previous and next video sequences can be any video stream: effect or stack of complex effects.
 
-You will find complete documentation and demonstration for each kind of transition in the developers' library: https://developer.stupeflix.com/library/?q=tags%3A%22transition%22%20is_featured%3ATrue.
+You will find complete documentation and demonstration for each kind of transition in the developers' `library: <https://developer.stupeflix.com/library/?q=tags%3A%22transition%22%20is_featured%3ATrue>`_.
 
 A typical transition tag looks like :
 
