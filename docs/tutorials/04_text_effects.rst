@@ -49,7 +49,7 @@ To activate it, you should change your xml and add the attribute "vector":
 This is a bit verbose, but will be improved in next versions. You can use 40.0 as magic constant, it should be ok in most cases.
 The difference should be almost invisible right now. But if you animate the text (zoom, scale...), the difference will be obvious.
 
-More advanced text rendering method is explained there :doc:`tutorials/07_advanced_text_rendering`
+More advanced text rendering method is explained there :doc:`07_advanced_text_rendering`.
 
 Effects
 -------
