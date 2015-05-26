@@ -4,12 +4,14 @@
 Text effects
 ============
 
-Warning: this is still a bit experimental. It will be supported in next releases, so you can use it right now for production deployment. Rendering quality will be improved for specific cases, but it is already a large improvement compared to the previous bitmap based method, as text rendering is now vector-based on a frame-by-frame basis. So, you may say, why it is experimental? Because we will package it in a better way, so you don't have to manage the nitty-gritty details we describe here. Be brave, that won't be so difficult.
+Text rendering is vector-based on a frame-by-frame basis or bitmap-based where text is turned into an image.
+In some cases down here, you'll have to manage some nitty-gritty details to get exactly what you need.
+Be brave, that won't be so difficult.
 
-Reminder: text rendering
+Text rendering : bitmaps
 ------------------------
 
-Historically, rendering text is done this way:
+Historically, rendering text is done this way, without the attribute "vector":
 
 .. code-block:: xml
 
@@ -21,12 +23,16 @@ Historically, rendering text is done this way:
     </body>
   </movie>
 
-This is a full screen "Hello World". The principle is simple: the text is turned into an image once for all, and then used as standard image. The drawback is evident: if you zoom on the text it is blurry and aliased.
+This is a full screen "Hello World".
+The principle is simple: the text is turned into an image once for all, and then used as standard image.
+The drawback is evident: if you zoom on the text it is blurry and aliased.
 
-Text rendering: new method
+Text rendering: vectorized
 --------------------------
 
-So how can we improve this? By drawing frame by frame the text but using vector based methods. To activate it, you should change your xml to:
+So how can we improve this bitmap rendering ?
+By drawing frame by frame the text but using vector based methods.
+To activate it, you should change your xml and add the attribute "vector":
 
 .. code-block:: xml
 
@@ -41,13 +47,15 @@ So how can we improve this? By drawing frame by frame the text but using vector 
   </movie>
 
 This is a bit verbose, but will be improved in next versions. You can use 40.0 as magic constant, it should be ok in most cases.
-
 The difference should be almost invisible right now. But if you animate the text (zoom, scale...), the difference will be obvious.
+
+More advanced text rendering method is explained there :doc:`tutorials/07_advanced_text_rendering`
 
 Effects
 -------
 
-Quality improvement is an interesting property. But the most important benefit comes from the availability of a lot of new effects. All the effects are configured in the distancecolor filter: you just have to replace it with your own one. Simple white text:
+Quality improvement is an interesting property. But the most important benefit comes from the availability of a lot of new effects.
+All the effects are configured in the distancecolor filter: you just have to replace it with your own one. Simple white text:
 
 .. code-block:: xml
 

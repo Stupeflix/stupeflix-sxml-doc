@@ -15,10 +15,10 @@ Sample
 .. code-block:: xml
 
   <sequence>
-    <text type="advanced" fontsize="40" duration="1" reference="AAAAAAA">עִבְרִית </text>
-    <text type="advanced" fontsize="40" duration="1" reference="AAAAAAA">العربية </text>
-    <text type="advanced" fontsize="40" duration="1" reference="AAAAAAA">汉语/漢語 </text>
-    <text type="advanced" fontsize="40" duration="1" reference="AAAAAAA">日本人</text>
+    <text type="advanced" fontsize="40" duration="1" reference="WWWWWWW">עִבְרִית </text>
+    <text type="advanced" fontsize="40" duration="1" reference="WWWWWWW">العربية </text>
+    <text type="advanced" fontsize="40" duration="1" reference="WWWWWWW">汉语/漢語 </text>
+    <text type="advanced" fontsize="40" duration="1" reference="WWWWWWW">日本人</text>
     <animator type="custom">
       <key time="0.0" pos="-1,0,0"/>
     </animator>
@@ -31,29 +31,29 @@ To define the bounding box for the text to be drawn, you just have to specify a 
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAA">Hello World!</text>
+  <text type="advanced" duration="1" reference="WWWWWWW">Hello World!</text>
 
 
 
-In that first example, you can see that the zone defined by "AAAAAAA" is too small to contain "Hello World", so an ellipsis ("...") is used to truncate it. It is guaranteed that the text won't overflow its bounding box. So, if we set a longer reference text, the ellipsis will disappear.
+In that first example, you can see that the zone defined by "WWWWWWW" is too small to contain "Hello World", so an ellipsis ("...") is used to truncate it. It is guaranteed that the text won't overflow its bounding box. So, if we set a longer reference text, the ellipsis will disappear.
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAA">Hello World!</text>
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWW">Hello World!</text>
 
 
 How can you setup easily the right reference text? The easier is to start with a text tag with no reference text, to check that position and size is ok, and then everything is ok, move it to the "reference" attribute:
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" >AAAAAAAAAAA</text>
+  <text type="advanced" duration="1" >WWWWWWWWWWW</text>
 
 
 then, when the reference text is ok in your layout :
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAA">Hello World!</text>
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWW">Hello World!</text>
 
 
 
@@ -64,7 +64,7 @@ When you don't add a reference text, there is no bounding box at all. When you a
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAA&#10;AAAAAA&#10;   AAAAAA">Hello World! This text will be truncated</text>
+  <text type="advanced" duration="1" reference="WWWW&#10;WWWWWW&#10;   WWWWWW">Hello World! This text will be truncated</text>
 
 
 
@@ -78,7 +78,7 @@ If you introduce spaces in the reference text, they will be used to shift the li
 .. code-block:: xml
 
   <sequence>
-    <text type="advanced" duration="1" reference="AAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;   AAAAAAAAAAAAAAAAAAAAAAAA&#10;     AAAAAAAAAAAAAAAAAAAAAA&#10;      AAAAAAAAAAAAAAAAAAAAA&#10;      AAAAAAAAAAAAAAAAAAAAA&#10;      AAAAAAAAAAAAAAAAAAAAA&#10;     AAAAAAAAAAAAAAAAAAAAAA&#10;   AAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAA">In text display, line wrap is the feature of continuing on a new line when a line is full, such that each line fits in the viewable window, allowing text to be read from top to bottom without any horizontal scrolling.
+    <text type="advanced" duration="1" reference="WWWWWWWWWWWWWWWWWWWWWWWWWWW&#10;   WWWWWWWWWWWWWWWWWWWWWWWW&#10;     WWWWWWWWWWWWWWWWWWWWWW&#10;      WWWWWWWWWWWWWWWWWWWWW&#10;      WWWWWWWWWWWWWWWWWWWWW&#10;      WWWWWWWWWWWWWWWWWWWWW&#10;     WWWWWWWWWWWWWWWWWWWWWW&#10;   WWWWWWWWWWWWWWWWWWWWWWWW&#10;WWWWWWWWWWWWWWWWWWWWWWWWWWW">In text display, line wrap is the feature of continuing on a new line when a line is full, such that each line fits in the viewable window, allowing text to be read from top to bottom without any horizontal scrolling.
   Word wrap is the additional feature of most text editors, word processors, and web browsers, of breaking lines between and not within words, except when a single word is longer than a line</text>
     <animator type="custom">
       <key time="0.0" pos="-1.2,0.8,0"/>
@@ -100,25 +100,25 @@ For right to left language, right/left alignment is inverted. The origin of the 
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAA&#10;" align="left">In text display, line wrap is the feature of continuing on a new line.</text>
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWWWWWWWWWWWWWWWWW&#10;WWWWWWWWWWWWWWWWWWWWWWWWWW&#10;" align="left">In text display, line wrap is the feature of continuing on a new line.</text>
 
 
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;" align="right">In text display,
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWWWWWWWWWWWWWWWWW&#10;WWWWWWWWWWWWWWWWWWWWWWWWWWW&#10;" align="right">In text display,
    line wrap is the feature of continuing on a new line.</text>
 
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;" align="center">In text display,
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWWWWWWWWWWWWWWWWW&#10;WWWWWWWWWWWWWWWWWWWWWWWWWWW&#10;" align="center">In text display,
      line wrap is the feature of continuing on a new line.</text>
 
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAAAAAAAAAAA&#10;">עִבְרִית</text>
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWWWWWWWWWWW&#10;">עִבְרִית</text>
 
 
 
@@ -136,7 +136,7 @@ Finally, anchoring is performed using the reference text, so the text is shifted
 
 .. code-block:: xml
 
-  <text type="advanced" duration="1" reference="AAAAAAAAAAAAAAAAAAAAA&#10;" align="right">עִבְרִית</text>
+  <text type="advanced" duration="1" reference="WWWWWWWWWWWWWWWWWWWWW&#10;" align="right">עִבְרִית</text>
 
 
 
@@ -149,7 +149,7 @@ Example
 .. code-block:: xml
 
   <stack>
-    <text type="advanced" fontsize="20" duration="1" reference="  AAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAA" weight="bold" style="italic" stretch="condensed" face="times" >In text display, line wrap is the feature of continuing on a new line when a line is full, </text>
+    <text type="advanced" fontsize="20" duration="1" reference="  WWWWWWWWWWWWW&#10;WWWWWWWWWWWWWWW" weight="bold" style="italic" stretch="condensed" face="times" >In text display, line wrap is the feature of continuing on a new line when a line is full, </text>
     <animator type="custom">
       <key time="0.0" pos="-1.6,0,0"/>
     </animator>

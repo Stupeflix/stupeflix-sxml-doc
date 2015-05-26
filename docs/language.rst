@@ -85,7 +85,7 @@ Text
 ============= ============ ========================================================================================================
 Attribute     Presence     Description
 ============= ============ ========================================================================================================
-type          required     the type of text effect. The only currently available type is "legend".
+type          required     the type of text effect. The available types are "legend", "zone", and "advanced"
 duration      optional     the duration of the text tag (optional because it may be inferred from the enclosing stack tag).
 ============= ============ ========================================================================================================
 
@@ -95,7 +95,8 @@ The text to be displayed is then contained in the text tag:
 
   <text type="legend">Here is the text to be displayed</text>
 
-The list of available text effects is right there :doc:`tutorials/04_text_effects`.
+The basic tutorial on text and effects/animations are right there :doc:`tutorials/04_text_effects`.
+More advanced text rendering method is explained there :doc:`tutorials/07_advanced_text_rendering`.
 And here is the `list of available fonts <https://developer.stupeflix.com/library/?q=fonts%20is_featured%3ATrue>`_.
 
 Audio
