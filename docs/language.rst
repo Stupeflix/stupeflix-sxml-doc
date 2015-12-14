@@ -114,7 +114,7 @@ margin-start  optional     starts the audio track with the specified delay (full
 margin-end    optional     ends the audio track with the speficied delay before the end (full duration given by the enclosing node)
 margin-both   optional     sets both margin. This is exclusive of other "margin" attributes
 volume        optional     arbitrary float, sets the volume (default is 1.0)
-loop          optional     loop the audio file if set to true
+loop          optional     loop the audio file if set to true (only available when using studio theme templates)
 ============= ============ ========================================================================================================
 
 An audio entry example:
